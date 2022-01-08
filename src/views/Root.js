@@ -3,12 +3,15 @@ import ThemeStore from 'provider/ThemeStore';
 import Theme from 'provider/Theme';
 import Home from './Home';
 import Navigation from 'components/organisms/Navigation/Navigation';
+import { CountriesStore } from 'provider/CountriesStore';
 
 const Root = () => (
   <ThemeStore>
     <Theme>
-      <Navigation />
-      <Home />
+      <CountriesStore>
+        <Navigation />
+        <Home />
+      </CountriesStore>
     </Theme>
   </ThemeStore>
 );

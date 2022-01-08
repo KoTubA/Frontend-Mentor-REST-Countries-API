@@ -6,5 +6,6 @@ export const Wrapper = styled.div`
   position: relative;
   align-items: center;
   justify-content: center;
+  color: ${({ theme }) => theme.colorText};
   width: 200px;
 `;

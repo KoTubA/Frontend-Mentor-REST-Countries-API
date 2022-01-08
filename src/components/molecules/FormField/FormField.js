@@ -1,16 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Wrapper } from './FormField.styles';
 import { Input } from 'components/atoms/Input/Input';
 import { Label } from 'components/atoms/Label/Label';
 import { ReactComponent as SeatchIcon } from 'assets/icons/icon-search.svg';
+import { useCountries } from 'provider/CountriesStore';
 
 const FormField = ({ label, name, id, placeholder, type = 'text', ...props }) => {
+  const { setQuery } = useCountries();
+
+  const [value, setValue] = useState('');
+
+  useEffect(() => {
+    const timeOutId = setTimeout(() => setQuery(value), 500);
+    return () => clearTimeout(timeOutId);
+  }, [value]);
+
+  const handleQuery = (e) => {
+    setValue(e.target.value);
+  };
+
   return (
     <Wrapper>
       <SeatchIcon />
       <Label htmlFor={id}>{label}</Label>
-      <Input name={name} id={id} type={type} placeholder={placeholder} spellCheck="false" {...props} />
+      <Input name={name} id={id} type={type} placeholder={placeholder} spellCheck="false" {...props} value={value} onChange={handleQuery} />
     </Wrapper>
   );
 };

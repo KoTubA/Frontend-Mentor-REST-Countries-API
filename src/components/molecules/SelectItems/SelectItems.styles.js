@@ -7,15 +7,15 @@ export const Wrapper = styled.ul`
   right: 0;
   border-radius: 5px;
   background-color: ${({ theme }) => theme.colorElements};
-  color: ${({ theme }) => theme.colorInput};
+  color: ${({ theme }) => theme.colorText};
   margin: 0;
-  padding: 0px;
+  padding: 12px 0px;
   list-style-type: none;
   overflow: hidden;
-  visibility: hidden;
   font-size: 12px;
 
   @media (min-width: 680px) {
     font-size: 14px;
+    top: 52px;
   }
 `;

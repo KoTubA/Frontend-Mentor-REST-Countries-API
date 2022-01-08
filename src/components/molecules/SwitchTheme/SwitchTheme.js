@@ -11,7 +11,7 @@ const SwitchTheme = () => {
   return (
     <Wrapper onClick={switchTheme}>
       <img src={theme.icon} alt="" />
-      <SwitchStatus>Dark Mode</SwitchStatus>
+      <SwitchStatus>{theme.status}</SwitchStatus>
     </Wrapper>
   );
 };

@@ -11,6 +11,7 @@ export const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.colorElements};
   border-radius: 5px;
   overflow: hidden;
+  cursor: pointer;
 `;
 
 export const WrapperDetails = styled.div`

@@ -5,7 +5,7 @@ export const Wrapper = styled.button`
   justify-content: space-between;
   align-items: center;
   background-color: ${({ theme }) => theme.colorElements};
-  color: ${({ theme }) => theme.colorInput};
+  color: ${({ theme }) => theme.colorText};
   border-radius: 5px;
   line-height: 20px;
   padding: 14px 19px 14px 24px;
@@ -13,9 +13,19 @@ export const Wrapper = styled.button`
   outline: none;
   width: 100%;
   margin-top: 16px;
+  cursor: pointer;
 
   span {
     font-size: 12px;
+  }
+
+  svg {
+    width: 10px;
+    height: 10px;
+  }
+
+  svg path {
+    fill: ${({ theme }) => theme.colorSelect};
   }
 
   @media (min-width: 680px) {
@@ -24,10 +34,10 @@ export const Wrapper = styled.button`
     span {
       font-size: 14px;
     }
-  }
 
-  svg {
-    width: 10px;
-    height: 10px;
+    svg {
+      width: 12px;
+      height: 12px;
+    }
   }
 `;

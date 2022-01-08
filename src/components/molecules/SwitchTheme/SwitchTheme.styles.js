@@ -7,6 +7,7 @@ export const Wrapper = styled.button`
   align-items: center;
   background-color: transparent;
   color: ${({ theme }) => theme.colorText};
+  cursor: pointer;
 
   img {
     width: 16px;

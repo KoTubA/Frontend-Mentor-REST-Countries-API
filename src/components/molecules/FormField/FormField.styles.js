@@ -13,6 +13,10 @@ export const Wrapper = styled.div`
     height: 16px;
     position: absolute;
     left: 32px;
+
+    path {
+      fill: ${({ theme }) => theme.colorInput};
+    }
   }
 
   @media (min-width: 680px) {
