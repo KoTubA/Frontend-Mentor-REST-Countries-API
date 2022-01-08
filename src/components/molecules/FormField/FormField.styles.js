@@ -14,4 +14,18 @@ export const Wrapper = styled.div`
     position: absolute;
     left: 32px;
   }
+
+  @media (min-width: 680px) {
+    padding: 0;
+    max-width: 380px;
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  @media (min-width: 960px) {
+    max-width: 480px;
+  }
 `;

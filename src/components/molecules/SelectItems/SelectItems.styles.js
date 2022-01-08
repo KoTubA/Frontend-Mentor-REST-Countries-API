@@ -13,4 +13,9 @@ export const Wrapper = styled.ul`
   list-style-type: none;
   overflow: hidden;
   visibility: hidden;
+  font-size: 12px;
+
+  @media (min-width: 680px) {
+    font-size: 14px;
+  }
 `;

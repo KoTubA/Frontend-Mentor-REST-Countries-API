@@ -6,10 +6,10 @@ export const Wrapper = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
+  max-width: 264px;
   color: ${({ theme }) => theme.colorText};
   background-color: ${({ theme }) => theme.colorElements};
   border-radius: 5px;
-  margin-bottom: 40px;
   overflow: hidden;
 `;
 

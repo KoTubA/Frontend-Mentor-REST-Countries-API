@@ -15,4 +15,8 @@ export const Input = styled.input`
   &::placeholder {
     color: ${({ theme }) => theme.colorText};
   }
+
+  @media (min-width: 680px) {
+    font-size: 14px;
+  }
 `;

@@ -14,6 +14,18 @@ export const Wrapper = styled.button`
   width: 100%;
   margin-top: 16px;
 
+  span {
+    font-size: 12px;
+  }
+
+  @media (min-width: 680px) {
+    margin-top: 0px;
+
+    span {
+      font-size: 14px;
+    }
+  }
+
   svg {
     width: 10px;
     height: 10px;

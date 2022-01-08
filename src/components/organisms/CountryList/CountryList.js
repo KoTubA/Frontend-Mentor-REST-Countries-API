@@ -7,6 +7,15 @@ const CountryList = () => (
     <CountryListItem />
     <CountryListItem />
     <CountryListItem />
+    <CountryListItem />
+    <CountryListItem />
+    <CountryListItem />
+    <CountryListItem />
+    <CountryListItem />
+    <CountryListItem />
+    <CountryListItem />
+    <CountryListItem />
+    <CountryListItem />
   </Wrapper>
 );
 
