@@ -6,6 +6,7 @@ const actionTypes = {
   setError: 'SET ERROR',
   setFilter: 'SET FILTER',
   setQuery: 'SET QUERY',
+  setCurrentCountries: 'SET CURRENT COUNTRIES',
 };
 
 const reducer = (state, action) => {
@@ -32,6 +33,11 @@ const reducer = (state, action) => {
         isLoading: false,
         isError: true,
       };
+    case actionTypes.setCurrentCountries:
+      return {
+        ...state,
+        currentCountries: action.currentCountries,
+      };
     default:
       return state;
   }
@@ -47,6 +53,7 @@ export const CountriesStore = ({ children }) => {
   };
 
   const [countriesState, dispatch] = useReducer(reducer, initialState);
+  const [currecntCountriesState, setCurrecntCountriesState] = useState([]);
   const [openFilter, setOpenFilter] = useState(false);
   const [value, setValue] = useState('');
 
@@ -69,6 +76,22 @@ export const CountriesStore = ({ children }) => {
   }, []);
 
   useEffect(() => {
+    if (countriesState.activeFilter === 'all' && countriesState.activeQuery === '') {
+      setCurrecntCountriesState(countriesState.countries);
+      return;
+    }
+
+    let currentCountries = countriesState.countries;
+    if (countriesState.activeFilter !== 'all') {
+      currentCountries = currentCountries.filter((country) => country.region.toLowerCase() === countriesState.activeFilter.toLowerCase());
+    }
+    if (countriesState.activeQuery) {
+      currentCountries = currentCountries.filter((country) => country.name.common.toLowerCase().includes(countriesState.activeQuery.toLowerCase()));
+    }
+    setCurrecntCountriesState(currentCountries);
+  }, [countriesState.activeQuery, countriesState.activeFilter]);
+
+  useEffect(() => {
     const timeOutId = setTimeout(() => setQuery(value), 500);
     return () => clearTimeout(timeOutId);
   }, [value]);
@@ -79,6 +102,7 @@ export const CountriesStore = ({ children }) => {
 
   const showCountries = (result) => {
     dispatch({ type: actionTypes.showCountries, result });
+    setCurrecntCountriesState(result);
   };
 
   const setFilter = (filter) => {
@@ -93,7 +117,7 @@ export const CountriesStore = ({ children }) => {
     dispatch({ type: actionTypes.setError });
   };
 
-  return <CountriesContext.Provider value={{ countriesState, openFilter, setOpenFilter, value, setValue, setOpen, setFilter, setQuery }}>{children}</CountriesContext.Provider>;
+  return <CountriesContext.Provider value={{ currecntCountriesState, countriesState, openFilter, setOpenFilter, value, setValue, setOpen, setFilter, setQuery }}>{children}</CountriesContext.Provider>;
 };
 
 export const useCountries = () => {
