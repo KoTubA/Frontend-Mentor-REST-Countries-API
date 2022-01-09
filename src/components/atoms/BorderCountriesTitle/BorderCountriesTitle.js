@@ -5,6 +5,7 @@ export const BorderCountriesTitle = styled.h4`
   line-height: 24px;
   font-weight: 600;
   margin: 0px 0px 6px 0px;
+  white-space: nowrap;
 
   @media (min-width: 680px) {
     margin: 0px 16px 0px 0px;

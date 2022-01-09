@@ -1,12 +1,15 @@
+import React from 'react';
 import { MainTitle } from 'components/atoms/MainTitle/MainTitle';
 import SwitchTheme from 'components/molecules/SwitchTheme/SwitchTheme';
-import React from 'react';
 import { NavWrapper, Wrapper } from './Navigation.styles';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => (
   <NavWrapper>
     <Wrapper>
-      <MainTitle>Where in the world?</MainTitle>
+      <Link to="/">
+        <MainTitle>Where in the world?</MainTitle>
+      </Link>
       <SwitchTheme />
     </Wrapper>
   </NavWrapper>

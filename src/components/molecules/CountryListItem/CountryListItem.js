@@ -7,13 +7,13 @@ import { Wrapper, WrapperDetails } from './CountryListItem.styles';
 const CountryListItem = ({ data }) => (
   <Wrapper>
     <CountryFlag>
-      <img src={data.flags.png} alt="" />
+      <img src={data.flags.svg} alt="" />
     </CountryFlag>
     <WrapperDetails>
       <CountryName>{data.name.common}</CountryName>
       <CountryInfo>
         <span>Population: </span>
-        {data.population.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+        {data.population.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') || '-'}
       </CountryInfo>
       <CountryInfo>
         <span>Region: </span>

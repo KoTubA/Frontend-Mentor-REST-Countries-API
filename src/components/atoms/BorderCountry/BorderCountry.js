@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-export const BorderCountry = styled.div`
+export const BorderCountry = styled(Link)`
   min-width: 96px;
   display: flex;
   justify-content: center;
@@ -12,12 +13,13 @@ export const BorderCountry = styled.div`
   line-height: 16px;
   padding: 6px 10px;
   margin: 10px 10px 0px 0px;
+  text-decoration: none;
 
   @media (min-width: 680px) {
     font-size: 14px;
     line-height: 20px;
     padding: 4px 10px;
-    margin: 0px 10px 0px 0px;
+    margin: 0px 10px 10px 0px;
   }
 
   @media (min-width: 960px) {
@@ -28,6 +30,6 @@ export const BorderCountry = styled.div`
   }
 
   @media (min-width: 1150px) {
-    margin: 0px 10px 0px 0px;
+    margin: 0px 10px 10px 0px;
   }
 `;

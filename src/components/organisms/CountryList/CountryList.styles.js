@@ -11,6 +11,11 @@ export const Wrapper = styled.div`
   justify-content: center;
   row-gap: 40px;
 
+  a {
+    text-decoration: none;
+    width: 100%;
+  }
+
   @media (min-width: 680px) {
     grid-template-columns: repeat(2, minmax(auto, 264px));
     grid-gap: 40px;

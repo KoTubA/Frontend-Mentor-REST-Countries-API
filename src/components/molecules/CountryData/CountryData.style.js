@@ -2,16 +2,9 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   display: flex;
-  flex-direction: column;
   width: 100%;
   padding-top: 64px;
-  align-items: center;
   color: ${({ theme }) => theme.colorText};
-
-  @media (min-width: 960px) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
 
   @media (min-width: 1150px) {
     padding-top: 80px;
@@ -19,6 +12,18 @@ export const Wrapper = styled.div`
 `;
 
 export const WrapperData = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  @media (min-width: 960px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+`;
+
+export const WrapperDataDetails = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;

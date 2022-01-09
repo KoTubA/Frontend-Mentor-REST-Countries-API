@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled(Link)`
   width: 104px;
   display: flex;
   justify-content: center;
@@ -10,6 +11,7 @@ export const Wrapper = styled.div`
   border-radius: 2px;
   font-size: 14px;
   padding: 6px 0px;
+  text-decoration: none;
 
   span {
     margin-left: 8px;

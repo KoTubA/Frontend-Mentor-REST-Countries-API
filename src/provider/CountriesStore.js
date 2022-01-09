@@ -48,6 +48,7 @@ export const CountriesStore = ({ children }) => {
 
   const [countriesState, dispatch] = useReducer(reducer, initialState);
   const [openFilter, setOpenFilter] = useState(false);
+  const [value, setValue] = useState('');
 
   useEffect(() => {
     fetch('https://restcountries.com/v3.1/all')
@@ -66,6 +67,11 @@ export const CountriesStore = ({ children }) => {
         setError();
       });
   }, []);
+
+  useEffect(() => {
+    const timeOutId = setTimeout(() => setQuery(value), 500);
+    return () => clearTimeout(timeOutId);
+  }, [value]);
 
   const setOpen = () => {
     openFilter ? setOpenFilter(false) : setOpenFilter(true);
@@ -87,7 +93,7 @@ export const CountriesStore = ({ children }) => {
     dispatch({ type: actionTypes.setError });
   };
 
-  return <CountriesContext.Provider value={{ countriesState, openFilter, setOpenFilter, setOpen, setFilter, setQuery }}>{children}</CountriesContext.Provider>;
+  return <CountriesContext.Provider value={{ countriesState, openFilter, setOpenFilter, value, setValue, setOpen, setFilter, setQuery }}>{children}</CountriesContext.Provider>;
 };
 
 export const useCountries = () => {

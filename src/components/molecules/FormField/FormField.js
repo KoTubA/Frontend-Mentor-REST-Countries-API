@@ -7,14 +7,7 @@ import { ReactComponent as SeatchIcon } from 'assets/icons/icon-search.svg';
 import { useCountries } from 'provider/CountriesStore';
 
 const FormField = ({ label, name, id, placeholder, type = 'text', ...props }) => {
-  const { setQuery } = useCountries();
-
-  const [value, setValue] = useState('');
-
-  useEffect(() => {
-    const timeOutId = setTimeout(() => setQuery(value), 500);
-    return () => clearTimeout(timeOutId);
-  }, [value]);
+  const { value, setValue } = useCountries();
 
   const handleQuery = (e) => {
     setValue(e.target.value);
