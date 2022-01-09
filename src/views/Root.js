@@ -4,6 +4,7 @@ import Theme from 'provider/Theme';
 import Home from './Home';
 import Navigation from 'components/organisms/Navigation/Navigation';
 import { CountriesStore } from 'provider/CountriesStore';
+import CountryDetails from './CountryDetails';
 
 const Root = () => (
   <ThemeStore>

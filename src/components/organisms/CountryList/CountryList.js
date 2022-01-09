@@ -1,5 +1,5 @@
 import React from 'react';
-import CountryListItem from 'components/molecules/CountryListItem.js/CountryListItem';
+import CountryListItem from 'components/molecules/CountryListItem/CountryListItem';
 import { useCountries } from 'provider/CountriesStore';
 import { Wrapper } from './CountryList.styles';
 import { StatusInfo } from 'components/atoms/StatusInfo/StatusInfo';
