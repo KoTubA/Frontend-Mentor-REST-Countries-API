@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7c1251af-4401-400e-84dd-df7aed2b2c58/deploy-status)](https://app.netlify.com/sites/elastic-albattani-2e31f4/deploys)
 
-It is a solution to the [REST Countries API with color theme switcher.](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca) The application is integrated with REST Countries V3.1 API which provides national data. In addition, the user has the option to change the application theme and view detailed information about a specific country.
+It is a solution to the [REST Countries API with color theme switcher.](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca) The application is integrated with [REST Countries V3.1 API](https://restcountries.com/) which provides national data. In addition, the user has the option to change the application theme and view detailed information about a specific country.
 
 ![Design preview for the Manage landing page coding challenge](./design/desktop-preview.jpg)
 
