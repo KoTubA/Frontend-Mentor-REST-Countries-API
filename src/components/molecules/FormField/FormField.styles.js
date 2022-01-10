@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
   width: 100%;
   padding: 0px;
   position: relative;
+  box-shadow: ${({ theme }) => theme.boxShadowFilter};
 
   svg {
     width: 16px;

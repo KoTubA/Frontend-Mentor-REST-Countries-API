@@ -11,6 +11,7 @@ export const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.colorElements};
   border-radius: 5px;
   overflow: hidden;
+  box-shadow: ${({ theme }) => theme.boxShadowItems};
 `;
 
 export const WrapperDetails = styled.div`

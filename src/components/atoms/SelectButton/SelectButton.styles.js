@@ -13,6 +13,7 @@ export const Wrapper = styled.button`
   outline: none;
   width: 100%;
   cursor: pointer;
+  box-shadow: ${({ theme }) => theme.boxShadowFilter};
 
   span {
     font-size: 12px;

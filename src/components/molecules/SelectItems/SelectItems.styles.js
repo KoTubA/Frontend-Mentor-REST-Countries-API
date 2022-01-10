@@ -13,6 +13,7 @@ export const Wrapper = styled.ul`
   list-style-type: none;
   overflow: hidden;
   font-size: 12px;
+  box-shadow: ${({ theme }) => theme.boxShadowFilter};
 
   @media (min-width: 1150px) {
     font-size: 14px;

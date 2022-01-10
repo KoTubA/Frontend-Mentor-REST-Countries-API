@@ -5,6 +5,8 @@ export const NavWrapper = styled.header`
   background-color: ${({ theme }) => theme.colorElements};
   display: flex;
   justify-content: center;
+  position: relative;
+  box-shadow: ${({ theme }) => theme.boxShadowFilter};
 `;
 
 export const Wrapper = styled.div`
