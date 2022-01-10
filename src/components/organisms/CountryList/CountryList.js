@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const CountryList = () => {
   const {
-    countriesState: { currentCountries, isLoading, isError },
+    countriesState: { isLoading, isError },
     currecntCountriesState,
   } = useCountries();
   return (

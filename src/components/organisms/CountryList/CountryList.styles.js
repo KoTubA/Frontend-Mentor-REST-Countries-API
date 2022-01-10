@@ -14,12 +14,14 @@ export const Wrapper = styled.div`
   a {
     text-decoration: none;
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   @media (min-width: 680px) {
     grid-template-columns: repeat(2, minmax(auto, 264px));
     grid-gap: 40px;
-    padding: 32px 56px;
+    padding: 56px;
   }
 
   @media (min-width: 960px) {
@@ -29,6 +31,6 @@ export const Wrapper = styled.div`
   @media (min-width: 1400px) {
     grid-template-columns: repeat(4, minmax(auto, 264px));
     grid-gap: 75px;
-    padding: 32px 80px;
+    padding: 48px 80px;
   }
 `;

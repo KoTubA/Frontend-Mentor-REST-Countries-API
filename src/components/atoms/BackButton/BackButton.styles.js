@@ -21,4 +21,11 @@ export const Wrapper = styled(Link)`
   svg path {
     fill: ${({ theme }) => theme.colorText};
   }
+
+  @media (min-width: 960px) {
+    width: 136px;
+    border-radius: 6px;
+    padding: 10px 0px;
+    font-size: 16px;
+  }
 `;

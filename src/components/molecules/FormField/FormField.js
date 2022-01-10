@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Wrapper } from './FormField.styles';
 import { Input } from 'components/atoms/Input/Input';

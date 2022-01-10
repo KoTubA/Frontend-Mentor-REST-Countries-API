@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 24px 0px;
+  padding: 0px;
   position: relative;
 
   svg {

@@ -51,7 +51,7 @@ export const WrapperDetailsBorder = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 16px 0px;
+  padding: 16px 0px 0px 0px;
 
   @media (min-width: 680px) {
     flex-direction: row;

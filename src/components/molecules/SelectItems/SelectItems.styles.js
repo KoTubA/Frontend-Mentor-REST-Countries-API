@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.ul`
   position: absolute;
-  top: 68px;
+  top: 52px;
   left: 0;
   right: 0;
   border-radius: 5px;
@@ -14,8 +14,8 @@ export const Wrapper = styled.ul`
   overflow: hidden;
   font-size: 12px;
 
-  @media (min-width: 680px) {
+  @media (min-width: 1150px) {
     font-size: 14px;
-    top: 52px;
+    top: 60px;
   }
 `;

@@ -12,7 +12,6 @@ export const Wrapper = styled.button`
   border: 0;
   outline: none;
   width: 100%;
-  margin-top: 16px;
   cursor: pointer;
 
   span {
@@ -39,5 +38,9 @@ export const Wrapper = styled.button`
       width: 12px;
       height: 12px;
     }
+  }
+
+  @media (min-width: 1150px) {
+    padding: 18px 19px 18px 24px;
   }
 `;

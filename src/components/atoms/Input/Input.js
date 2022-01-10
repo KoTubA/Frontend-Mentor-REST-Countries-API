@@ -16,7 +16,8 @@ export const Input = styled.input`
     color: ${({ theme }) => theme.colorText};
   }
 
-  @media (min-width: 680px) {
+  @media (min-width: 1150px) {
     font-size: 14px;
+    padding: 18px 18px 18px 74px;
   }
 `;

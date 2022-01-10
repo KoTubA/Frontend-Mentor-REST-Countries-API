@@ -7,5 +7,4 @@ export const Wrapper = styled.main`
   justify-content: flex-start;
   align-items: center;
   min-height: calc(100vh - 80px);
-  padding: 0px;
 `;

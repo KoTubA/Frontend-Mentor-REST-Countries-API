@@ -10,7 +10,7 @@ export const theme = {
     colorInput: 'hsl(0, 0%, 100%)',
     colorSelect: 'hsl(0, 0%, 100%)',
     icon: iconMoon,
-    status: 'Dark mode',
+    status: 'Dark Mode',
   },
   light: {
     colorElementsHover: 'hsl(0deg 0% 95%)',
@@ -20,6 +20,6 @@ export const theme = {
     colorInput: 'hsl(0, 0%, 52%)',
     colorSelect: 'hsl(0, 0%, 0%)',
     icon: iconSun,
-    status: 'Light mode',
+    status: 'Light Mode',
   },
 };

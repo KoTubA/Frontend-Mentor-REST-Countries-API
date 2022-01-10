@@ -67,7 +67,6 @@ export const CountriesStore = ({ children }) => {
         }
       })
       .then((result) => {
-        console.log(result);
         showCountries(result);
       })
       .catch(() => {

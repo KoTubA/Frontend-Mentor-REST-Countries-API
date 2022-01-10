@@ -5,7 +5,7 @@ import SelectFilter from 'components/molecules/SelectFilter/SelectFilter';
 
 const Filter = () => (
   <Wrapper>
-    <FormField label="Search for country" name="title" id="title" placeholder="Search for country..." />
+    <FormField label="Search for a country" name="title" id="title" placeholder="Search for a country..." />
     <SelectFilter />
   </Wrapper>
 );

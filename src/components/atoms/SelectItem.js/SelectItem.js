@@ -8,4 +8,8 @@ export const SelectItem = styled.li`
   &:hover {
     background-color: ${({ theme }) => theme.colorElementsHover};
   }
+
+  @media (min-width: 1150px) {
+    line-height: 20px;
+  }
 `;
