@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 export const ThemeContext = React.createContext();
 
 const ThemeStore = ({ children }) => {
-  const value = localStorage.getItem('theme') || 'dark';
+  const value = localStorage.getItem('theme') || 'light';
   const [themeState, setThemeState] = useState(value);
 
   const switchTheme = () => {
