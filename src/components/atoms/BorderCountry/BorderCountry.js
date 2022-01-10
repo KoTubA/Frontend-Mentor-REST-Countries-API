@@ -14,6 +14,7 @@ export const BorderCountry = styled(Link)`
   padding: 6px 10px;
   margin: 10px 10px 0px 0px;
   text-decoration: none;
+  box-shadow: ${({ theme }) => theme.boxShadowBorderCountry};
 
   @media (min-width: 680px) {
     font-size: 14px;

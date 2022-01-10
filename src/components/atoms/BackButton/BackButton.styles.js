@@ -12,6 +12,7 @@ export const Wrapper = styled(Link)`
   font-size: 14px;
   padding: 6px 0px;
   text-decoration: none;
+  box-shadow: ${({ theme }) => theme.boxShadowBack};
 
   span {
     margin-left: 8px;

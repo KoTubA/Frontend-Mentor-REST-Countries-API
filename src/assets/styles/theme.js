@@ -14,6 +14,8 @@ export const theme = {
     boxShadowNav: '0px 2px 4px 0px rgba(0, 0, 0, 0.06)',
     boxShadowFilter: '0px 2px 9px 0px rgba(0, 0, 0, 0.05)',
     boxShadowItems: '0px 0px 7px 2px rgba(0, 0, 0, 0.03)',
+    boxShadowBack: '0px 0px 7px 0px rgba(0, 0, 0, 0.03)',
+    boxShadowBorderCountry: '0px 0px 4px 1px rgba(0, 0, 0, 0.1)',
   },
   light: {
     colorElementsHover: 'hsl(0deg 0% 95%)',
@@ -27,5 +29,7 @@ export const theme = {
     boxShadowNav: '0px 2px 4px 0px rgba(0, 0, 0, 0.06)',
     boxShadowFilter: '0px 2px 9px 0px rgba(0, 0, 0, 0.05)',
     boxShadowItems: '0px 0px 7px 2px rgba(0, 0, 0, 0.03)',
+    boxShadowBack: '0px 0px 7px 0px rgba(0, 0, 0, 0.03)',
+    boxShadowBorderCountry: '0px 0px 4px 1px rgba(0, 0, 0, 0.1)',
   },
 };
